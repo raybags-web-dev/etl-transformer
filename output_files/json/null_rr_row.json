@@ -1,0 +1,266 @@
+{
+    "Request": {
+        "Version": [
+            "1.0"
+        ],
+        "HotelId": [
+            "1298"
+        ],
+        "PasswordHash": [
+            "238d56932d32333a6f51c1e72db235ff7c94c9c05bc2b611ba888b83353a6386"
+        ],
+        "Action": [
+            "ReservationList"
+        ],
+        "Reservations": [
+            {
+                "ReservationData": [
+                    {
+                        "GuestName": [
+                            ""
+                        ],
+                        "LastName": [
+                            ""
+                        ],
+                        "FirstName": [
+                            ""
+                        ],
+                        "Salutation": [
+                            ""
+                        ],
+                        "MiddleInitial": [
+                            ""
+                        ],
+                        "MiddleName": [
+                            ""
+                        ],
+                        "Street": [
+                            ""
+                        ],
+                        "Address2": [
+                            ""
+                        ],
+                        "City": [
+                            ""
+                        ],
+                        "State": [
+                            ""
+                        ],
+                        "ZipCode": [
+                            ""
+                        ],
+                        "Country": [
+                            ""
+                        ],
+                        "EmailAddress": [
+                            ""
+                        ],
+                        "Email": [
+                            ""
+                        ],
+                        "Cell": [
+                            ""
+                        ],
+                        "Language": [
+                            ""
+                        ],
+                        "Vip": [
+                            ""
+                        ],
+                        "AccountNumber": [
+                            ""
+                        ],
+                        "Phone": [
+                            ""
+                        ],
+                        "Fax": [
+                            ""
+                        ],
+                        "Company": [
+                            ""
+                        ],
+                        "ClientCode": [
+                            ""
+                        ],
+                        "LoyaltyID": [
+                            ""
+                        ],
+                        "EmailOptOut": [
+                            "false"
+                        ],
+                        "RegularMailOptOut": [
+                            "false"
+                        ],
+                        "ReservationNumber": [
+                            ""
+                        ],
+                        "ReservationNumberKey": [
+                            ""
+                        ],
+                        "ArrivalDate": [
+                            ""
+                        ],
+                        "DepartureDate": [
+                            ""
+                        ],
+                        "BookingDate": [
+                            ""
+                        ],
+                        "ReservationLastModifyDate": [
+                            ""
+                        ],
+                        "Nights": [
+                            ""
+                        ],
+                        "Status": [
+                            ""
+                        ],
+                        "ReservationStatus": [
+                            ""
+                        ],
+                        "Adults": [
+                            ""
+                        ],
+                        "Youths": [
+                            ""
+                        ],
+                        "Children": [
+                            ""
+                        ],
+                        "Room": [
+                            {
+                                "BuildingCode": [
+                                    ""
+                                ],
+                                "RoomCode": [
+                                    ""
+                                ],
+                                "RoomTypeCode": [
+                                    ""
+                                ],
+                                "RoomTypeDescription": [
+                                    ""
+                                ]
+                            }
+                        ],
+                        "FolioNumber": [
+                            ""
+                        ],
+                        "CreditAvailable": [
+                            ""
+                        ],
+                        "PostRestrictions": [
+                            ""
+                        ],
+                        "TelephoneRestrictions": [
+                            ""
+                        ],
+                        "Source": [
+                            ""
+                        ],
+                        "SubSource": [
+                            ""
+                        ],
+                        "ComplimentaryUse": [
+                            ""
+                        ],
+                        "HouseUse": [
+                            ""
+                        ],
+                        "MealPlan": [
+                            ""
+                        ],
+                        "RateType": [
+                            ""
+                        ],
+                        "RateTypeText": [
+                            ""
+                        ],
+                        "GuestType": [
+                            ""
+                        ],
+                        "CRSNumber": [
+                            ""
+                        ],
+                        "SettleBy": [
+                            ""
+                        ],
+                        "CheckGuestInAllowed": [
+                            ""
+                        ],
+                        "CheckGuestOutAllowed": [
+                            ""
+                        ],
+                        "CurrencyCode": [
+                            ""
+                        ],
+                        "TotalRateAmount": [
+                            "555555555555555"
+                        ],
+                        "TotalRateAmountTaxes": [
+                            "6666666666"
+                        ],
+                        "RoomRateAmount": [
+                            ""
+                        ],
+                        "RoomRateAmountTaxes": [
+                            ""
+                        ],
+                        "ResortFee": [
+                            ""
+                        ],
+                        "ResortFeeTaxes": [
+                            ""
+                        ],
+                        "HousekeepingFee": [
+                            ""
+                        ],
+                        "HousekeepingFeeTaxes": [
+                            ""
+                        ],
+                        "SpaFee": [
+                            ""
+                        ],
+                        "SpaFeeTaxes": [
+                            ""
+                        ],
+                        "FirstRoomNightAmount": [
+                            ""
+                        ],
+                        "RoomRevenue": [
+                            ""
+                        ],
+                        "FoodRevenue": [
+                            ""
+                        ],
+                        "BanquetRevenue": [
+                            "123456789"
+                        ],
+                        "OtherRevenue": [
+                            "456789456"
+                        ],
+                        "ReservationText": [
+                            "525252"
+                        ],
+                        "Group": [
+                            {
+                                "GroupReservation": [
+                                    ""
+                                ],
+                                "Name": [
+                                    ""
+                                ]
+                            }
+                        ],
+                        "SpecialRequests": [
+                            ""
+                        ],
+                        "Vehicles": [
+                            ""
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

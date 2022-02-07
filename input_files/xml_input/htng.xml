@@ -1,0 +1,123 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soap:Header>
+        <HTNGHeader xmlns="http://htng.org/1.1/Header/">
+            <From>
+                <systemId>stayntouch_htng</systemId>
+                <Credential>
+                    <userName>stayntouch</userName>
+                    <password>R9RzHgBQbt</password>
+                </Credential>
+            </From>
+        </HTNGHeader>
+    </soap:Header>
+    <soap:Body>
+        <OTA_HotelResNotifRQ xmlns="http://www.opentravel.org/OTA/2003/05" Version="1.003" ResStatus="Book" TimeStamp="2021-12-01T23:59:07+00:00" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opentravel.org/OTA/2003/05 OTA_HotelResNotifRQ.xsd">
+            <POS>
+                <Source>
+                    <RequestorID Type="22" ID="PMS"></RequestorID>
+                    <BookingChannel Primary="true" Type="4"></BookingChannel>
+                </Source>
+            </POS>
+            <HotelReservations>
+                <HotelReservation CreatorID="PMS" CreateDateTime="2021-12-01T23:57:09Z" LastModifyDateTime="2021-12-01 23:59:07 UTC" ResStatus="RESERVED">
+                    <UniqueID Type="10" ID="113236"></UniqueID>
+                    <RoomStays>
+                        <RoomStay MarketCode="Retail" SourceOfBusiness="Third Party Agent / OTA/ FIT">
+                            <RatePlans>
+                                <RatePlan RatePlanCode="ODBOOK">
+                                    <RatePlanInclusions TaxInclusive="false"></RatePlanInclusions>
+                                </RatePlan>
+                            </RatePlans>
+                            <RoomRates>
+                                <RoomRate RoomTypeCode="SUP" RatePlanCode="ODBOOK" NumberOfUnits="1">
+                                    <Rates>
+                                        <Rate RateTimeUnit="Day" EffectiveDate="2021-12-15" ExpireDate="2021-12-16" UnitMultiplier="1">
+                                            <Base CurrencyCode="USD" AmountBeforeTax="377.1">
+                                                <Taxes Amount="59.12" CurrencyCode="USD"></Taxes>
+                                            </Base>
+                                        </Rate>
+                                        <Rate RateTimeUnit="Day" EffectiveDate="2021-12-16" ExpireDate="2021-12-17" UnitMultiplier="1">
+                                            <Base CurrencyCode="USD" AmountBeforeTax="413.1">
+                                                <Taxes Amount="64.42999999999999" CurrencyCode="USD"></Taxes>
+                                            </Base>
+                                        </Rate>
+                                        <Rate RateTimeUnit="Day" EffectiveDate="2021-12-17" ExpireDate="2021-12-18" UnitMultiplier="1">
+                                            <Base CurrencyCode="USD" AmountBeforeTax="485.1">
+                                                <Taxes Amount="75.05" CurrencyCode="USD"></Taxes>
+                                            </Base>
+                                        </Rate>
+                                        <Rate RateTimeUnit="Day" EffectiveDate="2021-12-18" ExpireDate="2021-12-19" UnitMultiplier="1">
+                                            <Base CurrencyCode="USD" AmountBeforeTax="539.1">
+                                                <Taxes Amount="83.02000000000001" CurrencyCode="USD"></Taxes>
+                                            </Base>
+                                        </Rate>
+                                    </Rates>
+                                </RoomRate>
+                            </RoomRates>
+                            <GuestCounts IsPerRoom="true">
+                                <GuestCount AgeQualifyingCode="10" Count="2"></GuestCount>
+                            </GuestCounts>
+                            <TimeSpan Start="2021-12-15" End="2021-12-19"></TimeSpan>
+                            <Total CurrencyCode="USD" AmountBeforeTax="1814.4">
+                                <Taxes Amount="281.62" CurrencyCode="USD"></Taxes>
+                            </Total>
+                            <ResGuestRPHs>
+                                <ResGuestRPH RPH="1"></ResGuestRPH>
+                            </ResGuestRPHs>
+                            <Comments>
+                                <Comment GuestViewable="true">
+                                    <Text>Special Request: smoking preference: Non-Smoking
+    
+    Arrival Information: booker_is_genius
+</Text>
+                                </Comment>
+                            </Comments>
+                            <BasicPropertyInfo HotelCode="RYLTN"></BasicPropertyInfo>
+                        </RoomStay>
+                    </RoomStays>
+                    <Services>
+                        <Service Inclusive="0" Quantity="1" ServiceInventoryCode="Facility Fee" ServicePricingType="12">
+                            <Price>
+                                <Total AmountAfterTax="160.68" AmountBeforeTax="140.0" CurrencyCode="USD"></Total>
+                            </Price>
+                            <ServiceDetails>
+                                <TimeSpan Start="2021-12-15" End="2021-12-19"></TimeSpan>
+                            </ServiceDetails>
+                        </Service>
+                    </Services>
+                    <ResGlobalInfo>
+                        <HotelReservationIDs>
+                            <HotelReservationID ResID_Source="PMS" ResID_Type="10" ResID_Value="113236" ForGuest="true"></HotelReservationID>
+                            <HotelReservationID ResID_Type="14" ResID_Value="NYCROY164671958" ForGuest="true"></HotelReservationID>
+                        </HotelReservationIDs>
+                    </ResGlobalInfo>
+                    <ResGuests>
+                        <ResGuest PrimaryIndicator="true">
+                            <Profiles ResGuestRPH="1" PrimaryIndicator="true">
+                                <ProfileInfo>
+                                    <UniqueID Type="1" ID="113104002" ID_Context="pms"></UniqueID>
+                                    <Profile ProfileType="1">
+                                        <Customer>
+                                            <PersonName>
+                                                <GivenName>Jennifer</GivenName>
+                                                <Surname>Cannon</Surname>
+                                            </PersonName>
+                                            <Telephone PhoneTechType="1" PhoneNumber="+18012311132" FormattedInd="false" DefaultInd="false"></Telephone>
+                                            <Email>jcanno.817753@guest.booking.com</Email>
+                                            <Address Type="1">
+                                                <AddressLine>1317 E Milne ln</AddressLine>
+                                                <CityName>Lugano</CityName>
+                                                <PostalCode>84047</PostalCode>
+                                                <CountryName Code="US"></CountryName>
+                                            </Address>
+                                        </Customer>
+                                    </Profile>
+                                </ProfileInfo>
+                            </Profiles>
+                        </ResGuest>
+                    </ResGuests>
+                </HotelReservation>
+            </HotelReservations>
+        </OTA_HotelResNotifRQ>
+    </soap:Body>
+</soap:Envelope>

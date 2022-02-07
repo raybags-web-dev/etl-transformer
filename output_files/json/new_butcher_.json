@@ -1,0 +1,679 @@
+{
+    "root": {
+        "action": [
+            "[ADD | BOOK | WAIT_LIST | CONFIRM | DENY | CANCEL | CHECK_IN | NO_SHOW | CHECK_OUT | EDIT | NA]"
+        ],
+        "statusCode": [
+            "[REQUESTED | RESERVED | WAIT_LISTED | REQUEST_DENIED | IN_HOUSE | CANCELED | DID_NOT_SHOW | CHECKED_OUT]"
+        ],
+        "guaranteeCode": [
+            "STRING"
+        ],
+        "lastUpdatedAt": [
+            "TIMESTAMP (e.g. '2022-02-06T15:01:33.409Z')"
+        ],
+        "lastUpdatedBy": [
+            "STRING"
+        ],
+        "bookingNumber": [
+            "STRING"
+        ],
+        "bookingDate": [
+            "TIMESTAMP (e.g. '2022-02-06T15:01:33.409Z')"
+        ],
+        "bookedBy": [
+            "STRING"
+        ],
+        "reservationSource": [
+            "STRING"
+        ],
+        "cancellationNumber": [
+            "STRING"
+        ],
+        "cancellationDate": [
+            "TIMESTAMP (e.g. '2022-02-06T15:01:33.409Z')"
+        ],
+        "canceledBy": [
+            "STRING"
+        ],
+        "checkinDate": [
+            {
+                "year": [
+                    "INT | STRING"
+                ],
+                "month": [
+                    "INT | STRING"
+                ],
+                "day": [
+                    "INT | STRING"
+                ]
+            }
+        ],
+        "actualCheckinDate": [
+            "TIMESTAMP (e.g. '2022-02-06T15:01:33.409Z')"
+        ],
+        "checkedInBy": [
+            "STRING"
+        ],
+        "checkoutDate": [
+            {
+                "year": [
+                    "INT | STRING"
+                ],
+                "month": [
+                    "INT | STRING"
+                ],
+                "day": [
+                    "INT | STRING"
+                ]
+            }
+        ],
+        "actualCheckoutDate": [
+            "TIMESTAMP (e.g. '2022-02-06T15:01:33.409Z')"
+        ],
+        "checkedOutBy": [
+            "STRING"
+        ],
+        "stayLength": [
+            "INT or STRING"
+        ],
+        "numberOfAdults": [
+            "INT or STRING"
+        ],
+        "numberOfChildren": [
+            "INT or STRING"
+        ],
+        "roomNumber": [
+            "STRING"
+        ],
+        "roomType": [
+            "STRING"
+        ],
+        "roomTypeChargeCode": [
+            "STRING"
+        ],
+        "blockCode": [
+            "STRING"
+        ],
+        "numberOfRooms": [
+            "INT or STRING"
+        ],
+        "market": [
+            "STRING"
+        ],
+        "purposeOfStay": [
+            "STRING"
+        ],
+        "totalRoomRevenue": [
+            {
+                "amountBeforeTax": [
+                    {
+                        "currencyCode": [
+                            "STRING"
+                        ],
+                        "units": [
+                            "LONG | STRING"
+                        ],
+                        "nanos": [
+                            "INT | STRING"
+                        ]
+                    }
+                ],
+                "taxAmount": [
+                    {
+                        "currencyCode": [
+                            "STRING"
+                        ],
+                        "units": [
+                            "LONG | STRING"
+                        ],
+                        "nanos": [
+                            "INT | STRING"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "totalRemainingBalance": [
+            {
+                "currencyCode": [
+                    "STRING"
+                ],
+                "units": [
+                    "LONG | STRING"
+                ],
+                "nanos": [
+                    "INT | STRING"
+                ]
+            }
+        ],
+        "totalDepositRequired": [
+            {
+                "currencyCode": [
+                    "STRING"
+                ],
+                "units": [
+                    "LONG | STRING"
+                ],
+                "nanos": [
+                    "INT | STRING"
+                ]
+            }
+        ],
+        "depositRequiredDate": [
+            {
+                "year": [
+                    "INT | STRING"
+                ],
+                "month": [
+                    "INT | STRING"
+                ],
+                "day": [
+                    "INT | STRING"
+                ]
+            }
+        ],
+        "ratePlans": [
+            {
+                "timeSpan": [
+                    {
+                        "startTime": [
+                            "TIMESTAMP (e.g. '2022-02-06T15:01:33.409Z')"
+                        ],
+                        "timeUnitType": [
+                            "[DAY | HOUR | MINUTE]"
+                        ],
+                        "timeUnitsOptional": [
+                            "INT or STRING"
+                        ]
+                    }
+                ],
+                "confidential": [
+                    "BOOLEAN or STRING"
+                ],
+                "rates": [
+                    {
+                        "amount": [
+                            {
+                                "currencyCode": [
+                                    "STRING"
+                                ],
+                                "units": [
+                                    "LONG | STRING"
+                                ],
+                                "nanos": [
+                                    "INT | STRING"
+                                ]
+                            }
+                        ],
+                        "timeUnits": [
+                            "INT or STRING"
+                        ],
+                        "timeUnitType": [
+                            "[DAY | HOUR | MINUTE]"
+                        ],
+                        "startDate": [
+                            {
+                                "year": [
+                                    "INT | STRING"
+                                ],
+                                "month": [
+                                    "INT | STRING"
+                                ],
+                                "day": [
+                                    "INT | STRING"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "rateCodeOptional": [
+                    "STRING"
+                ]
+            }
+        ],
+        "profiles": [
+            {
+                "action": [
+                    "[ADD | DELETE]"
+                ],
+                "profileId": [
+                    "STRING"
+                ],
+                "profileType": [
+                    "[NA | GUEST | CORPORATE | TRAVEL | WHOLESALER | GROUP | TOUR | CRO | CONTACT | AIRLINE | REPCOMPANY | INTERNET | HOTEL]"
+                ],
+                "title": [
+                    "STRING"
+                ],
+                "firstName": [
+                    "STRING"
+                ],
+                "middleName": [
+                    "STRING"
+                ],
+                "lastName": [
+                    "STRING"
+                ],
+                "gender": [
+                    "[UNKNOWN | FEMALE | MALE]"
+                ],
+                "dateOfBirth": [
+                    {
+                        "year": [
+                            "INT | STRING"
+                        ],
+                        "month": [
+                            "INT | STRING"
+                        ],
+                        "day": [
+                            "INT | STRING"
+                        ]
+                    }
+                ],
+                "vipStatus": [
+                    "STRING"
+                ],
+                "primaryLanguage": [
+                    "STRING"
+                ],
+                "emailOptOut": [
+                    "BOOLEAN or STRING"
+                ],
+                "mailOptOut": [
+                    "BOOLEAN or STRING"
+                ],
+                "postalAddresses": [
+                    {
+                        "address1": [
+                            "STRING"
+                        ],
+                        "address2": [
+                            "STRING"
+                        ],
+                        "city": [
+                            "STRING"
+                        ],
+                        "state": [
+                            "STRING"
+                        ],
+                        "country": [
+                            "STRING"
+                        ],
+                        "zipCode": [
+                            "STRING"
+                        ],
+                        "addressType": [
+                            "[HOME | BUSINESS | MAILING | SHIPPING | BILLING | OTHER]"
+                        ],
+                        "isPrimary": [
+                            "BOOLEAN | STRING"
+                        ],
+                        "inactiveDate": [
+                            "TIMESTAMP (e.g. '2022-02-06T15:01:33.409Z')"
+                        ]
+                    }
+                ],
+                "accountId": [
+                    "STRING"
+                ],
+                "salutation": [
+                    "STRING"
+                ],
+                "propertyOptional": [
+                    "STRING"
+                ],
+                "interfaceTypeOptional": [
+                    "STRING"
+                ],
+                "remoteSystemNameOptional": [
+                    "STRING"
+                ],
+                "corvetteCompanyInfo": [
+                    {
+                        "name": [
+                            "STRING"
+                        ]
+                    }
+                ],
+                "corvetteGuestNotes": [
+                    {
+                        "title": [
+                            "STRING"
+                        ],
+                        "text": [
+                            "STRING"
+                        ],
+                        "type": [
+                            "STRING"
+                        ],
+                        "time": [
+                            "TIMESTAMP (e.g. '2022-02-06T15:01:33.409Z')"
+                        ]
+                    }
+                ],
+                "corvetteEmailAddresses": [
+                    {
+                        "emailAddress": [
+                            "STRING"
+                        ],
+                        "isPrimary": [
+                            "BOOLEAN or STRING"
+                        ],
+                        "inactiveDate": [
+                            "TIMESTAMP (e.g. '2022-02-06T15:01:33.409Z')"
+                        ]
+                    }
+                ],
+                "corvetteMemberships": [
+                    {
+                        "loyaltyNumber": [
+                            "STRING"
+                        ],
+                        "programCode": [
+                            "STRING"
+                        ],
+                        "levelCode": [
+                            "STRING"
+                        ],
+                        "expireDate": [
+                            {
+                                "year": [
+                                    "INT | STRING"
+                                ],
+                                "month": [
+                                    "INT | STRING"
+                                ],
+                                "day": [
+                                    "INT | STRING"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "corvettePhoneNumbers": [
+                    {
+                        "phoneNumber": [
+                            "STRING"
+                        ],
+                        "type": [
+                            "STRING"
+                        ],
+                        "isPrimary": [
+                            "BOOLEAN or STRING"
+                        ],
+                        "inactiveDate": [
+                            "TIMESTAMP (e.g. '2022-02-06T15:01:33.409Z')"
+                        ]
+                    }
+                ],
+                "corvettePmsDefinedFields": [
+                    {
+                        "name": [
+                            "STRING"
+                        ],
+                        "value": [
+                            "STRING"
+                        ]
+                    }
+                ],
+                "corvettePropertyDefinedFields": [
+                    {
+                        "name": [
+                            "STRING"
+                        ],
+                        "value": [
+                            "STRING"
+                        ]
+                    }
+                ],
+                "corvetteCreditCards": [
+                    {
+                        "last4": [
+                            "STRING"
+                        ],
+                        "expirationDate": [
+                            {
+                                "year": [
+                                    "INT | STRING"
+                                ],
+                                "month": [
+                                    "INT | STRING"
+                                ],
+                                "day": [
+                                    "INT | STRING"
+                                ]
+                            }
+                        ],
+                        "type": [
+                            "STRING"
+                        ],
+                        "isPrimary": [
+                            "BOOLEAN or STRING"
+                        ]
+                    }
+                ],
+                "lastUpdatedAt": [
+                    "TIMESTAMP (e.g. '2022-02-06T15:01:33.409Z')"
+                ]
+            }
+        ],
+        "accountId": [
+            "STRING"
+        ],
+        "transactions": [
+            {
+                "externalId": [
+                    "STRING"
+                ],
+                "transactedAt": [
+                    {
+                        "year": [
+                            "INT | STRING"
+                        ],
+                        "month": [
+                            "INT | STRING"
+                        ],
+                        "day": [
+                            "INT | STRING"
+                        ]
+                    }
+                ],
+                "beginAt": [
+                    {
+                        "year": [
+                            "INT | STRING"
+                        ],
+                        "month": [
+                            "INT | STRING"
+                        ],
+                        "day": [
+                            "INT | STRING"
+                        ]
+                    }
+                ],
+                "endAt": [
+                    {
+                        "year": [
+                            "INT | STRING"
+                        ],
+                        "month": [
+                            "INT | STRING"
+                        ],
+                        "day": [
+                            "INT | STRING"
+                        ]
+                    }
+                ],
+                "vendorCategory": [
+                    "[VENDOR_CATEGORY_INVALID | VENDOR_CATEGORY_OTHER | VENDOR_CATEGORY_PROPERTY | VENDOR_CATEGORY_RESTAURANT | VENDOR_CATEGORY_SPA | VENDOR_CATEGORY_RECREATION_PROVIDER | VENDOR_CATEGORY_SHOP]"
+                ],
+                "vendorName": [
+                    "STRING"
+                ],
+                "transactionCategory": [
+                    "[TRANSACTION_CATEGORY_INVALID | TRANSACTION_CATEGORY_OTHER | TRANSACTION_CATEGORY_FNB | TRANSACTION_CATEGORY_SPA | TRANSACTION_CATEGORY_SPORTS | TRANSACTION_CATEGORY_ENTERTAINMENT | TRANSACTION_CATEGORY_AUTOMOBILE | TRANSACTION_CATEGORY_LAUNDRY | TRANSACTION_CATEGORY_PACKAGE]"
+                ],
+                "lineItems": [
+                    {
+                        "amount": [
+                            {
+                                "currencyCode": [
+                                    "STRING"
+                                ],
+                                "units": [
+                                    "LONG | STRING"
+                                ],
+                                "nanos": [
+                                    "INT | STRING"
+                                ]
+                            }
+                        ],
+                        "taxAmount": [
+                            {
+                                "currencyCode": [
+                                    "STRING"
+                                ],
+                                "units": [
+                                    "LONG | STRING"
+                                ],
+                                "nanos": [
+                                    "INT | STRING"
+                                ]
+                            }
+                        ],
+                        "amountIncludesTax": [
+                            "BOOLEAN or STRING"
+                        ],
+                        "amountIsDebit": [
+                            "BOOLEAN or STRING"
+                        ],
+                        "quantity": [
+                            "INT or STRING"
+                        ],
+                        "itemCode": [
+                            "STRING"
+                        ],
+                        "itemDescription": [
+                            "STRING"
+                        ],
+                        "lineItemCategory": [
+                            "STRING"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "propertyOptional": [
+            "STRING"
+        ],
+        "interfaceTypeOptional": [
+            "STRING"
+        ],
+        "remoteSystemNameOptional": [
+            "STRING"
+        ],
+        "corvetteGuestNotes": [
+            {
+                "title": [
+                    "STRING"
+                ],
+                "text": [
+                    "STRING"
+                ],
+                "type": [
+                    "STRING"
+                ],
+                "time": [
+                    "TIMESTAMP (e.g. '2022-02-06T15:01:33.409Z')"
+                ]
+            }
+        ],
+        "corvetteTravelAgency": [
+            {
+                "name": [
+                    "STRING"
+                ]
+            }
+        ],
+        "confirmationCodeOptional": [
+            "STRING"
+        ],
+        "corvettePmsDefinedFields": [
+            {
+                "name": [
+                    "STRING"
+                ],
+                "value": [
+                    "STRING"
+                ]
+            }
+        ],
+        "corvettePropertyDefinedFields": [
+            {
+                "name": [
+                    "STRING"
+                ],
+                "value": [
+                    "STRING"
+                ]
+            }
+        ],
+        "services": [
+            {
+                "timeSpan": [
+                    {
+                        "startTime": [
+                            "TIMESTAMP (e.g. '2022-02-06T15:01:33.409Z')"
+                        ],
+                        "timeUnitType": [
+                            "[DAY | HOUR | MINUTE]"
+                        ],
+                        "timeUnitsOptional": [
+                            "INT or STRING"
+                        ]
+                    }
+                ],
+                "pricePerUnit": [
+                    {
+                        "amountBeforeTax": [
+                            {
+                                "currencyCode": [
+                                    "STRING"
+                                ],
+                                "units": [
+                                    "LONG | STRING"
+                                ],
+                                "nanos": [
+                                    "INT | STRING"
+                                ]
+                            }
+                        ],
+                        "taxAmount": [
+                            {
+                                "currencyCode": [
+                                    "STRING"
+                                ],
+                                "units": [
+                                    "LONG | STRING"
+                                ],
+                                "nanos": [
+                                    "INT | STRING"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "inventoryCodeOptional": [
+                    "STRING"
+                ],
+                "rateCodeOptional": [
+                    "STRING"
+                ],
+                "numberOfUnitsOptional": [
+                    "INT or STRING"
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+  <action>[ADD | BOOK | WAIT_LIST | CONFIRM | DENY | CANCEL | CHECK_IN | NO_SHOW | CHECK_OUT | EDIT | NA]</action>
+  <statusCode>[REQUESTED | RESERVED | WAIT_LISTED | REQUEST_DENIED | IN_HOUSE | CANCELED | DID_NOT_SHOW | CHECKED_OUT]</statusCode>
+  <guaranteeCode>STRING</guaranteeCode>
+  <lastUpdatedAt>TIMESTAMP (e.g. '2022-02-06T15:01:33.409Z')</lastUpdatedAt>
+  <lastUpdatedBy>STRING</lastUpdatedBy>
+  <bookingNumber>STRING</bookingNumber>
+  <bookingDate>TIMESTAMP (e.g. '2022-02-06T15:01:33.409Z')</bookingDate>
+  <bookedBy>STRING</bookedBy>
+  <reservationSource>STRING</reservationSource>
+  <cancellationNumber>STRING</cancellationNumber>
+  <cancellationDate>TIMESTAMP (e.g. '2022-02-06T15:01:33.409Z')</cancellationDate>
+  <canceledBy>STRING</canceledBy>
+  <checkinDate>
+    <year>INT | STRING</year>
+    <month>INT | STRING</month>
+    <day>INT | STRING</day>
+  </checkinDate>
+  <actualCheckinDate>TIMESTAMP (e.g. '2022-02-06T15:01:33.409Z')</actualCheckinDate>
+  <checkedInBy>STRING</checkedInBy>
+  <checkoutDate>
+    <year>INT | STRING</year>
+    <month>INT | STRING</month>
+    <day>INT | STRING</day>
+  </checkoutDate>
+  <actualCheckoutDate>TIMESTAMP (e.g. '2022-02-06T15:01:33.409Z')</actualCheckoutDate>
+  <checkedOutBy>STRING</checkedOutBy>
+  <stayLength>INT or STRING</stayLength>
+  <numberOfAdults>INT or STRING</numberOfAdults>
+  <numberOfChildren>INT or STRING</numberOfChildren>
+  <roomNumber>STRING</roomNumber>
+  <roomType>STRING</roomType>
+  <roomTypeChargeCode>STRING</roomTypeChargeCode>
+  <blockCode>STRING</blockCode>
+  <numberOfRooms>INT or STRING</numberOfRooms>
+  <market>STRING</market>
+  <purposeOfStay>STRING</purposeOfStay>
+  <totalRoomRevenue>
+    <amountBeforeTax>
+      <currencyCode>STRING</currencyCode>
+      <units>LONG | STRING</units>
+      <nanos>INT | STRING</nanos>
+    </amountBeforeTax>
+    <taxAmount>
+      <currencyCode>STRING</currencyCode>
+      <units>LONG | STRING</units>
+      <nanos>INT | STRING</nanos>
+    </taxAmount>
+  </totalRoomRevenue>
+  <totalRemainingBalance>
+    <currencyCode>STRING</currencyCode>
+    <units>LONG | STRING</units>
+    <nanos>INT | STRING</nanos>
+  </totalRemainingBalance>
+  <totalDepositRequired>
+    <currencyCode>STRING</currencyCode>
+    <units>LONG | STRING</units>
+    <nanos>INT | STRING</nanos>
+  </totalDepositRequired>
+  <depositRequiredDate>
+    <year>INT | STRING</year>
+    <month>INT | STRING</month>
+    <day>INT | STRING</day>
+  </depositRequiredDate>
+  <ratePlans>
+    <timeSpan>
+      <startTime>TIMESTAMP (e.g. '2022-02-06T15:01:33.409Z')</startTime>
+      <timeUnitType>[DAY | HOUR | MINUTE]</timeUnitType>
+      <timeUnitsOptional>INT or STRING</timeUnitsOptional>
+    </timeSpan>
+    <confidential>BOOLEAN or STRING</confidential>
+    <rates>
+      <amount>
+        <currencyCode>STRING</currencyCode>
+        <units>LONG | STRING</units>
+        <nanos>INT | STRING</nanos>
+      </amount>
+      <timeUnits>INT or STRING</timeUnits>
+      <timeUnitType>[DAY | HOUR | MINUTE]</timeUnitType>
+      <startDate>
+        <year>INT | STRING</year>
+        <month>INT | STRING</month>
+        <day>INT | STRING</day>
+      </startDate>
+    </rates>
+    <rateCodeOptional>STRING</rateCodeOptional>
+  </ratePlans>
+  <profiles>
+    <action>[ADD | DELETE]</action>
+    <profileId>STRING</profileId>
+    <profileType>[NA | GUEST | CORPORATE | TRAVEL | WHOLESALER | GROUP | TOUR | CRO | CONTACT | AIRLINE | REPCOMPANY | INTERNET | HOTEL]</profileType>
+    <title>STRING</title>
+    <firstName>STRING</firstName>
+    <middleName>STRING</middleName>
+    <lastName>STRING</lastName>
+    <gender>[UNKNOWN | FEMALE | MALE]</gender>
+    <dateOfBirth>
+      <year>INT | STRING</year>
+      <month>INT | STRING</month>
+      <day>INT | STRING</day>
+    </dateOfBirth>
+    <vipStatus>STRING</vipStatus>
+    <primaryLanguage>STRING</primaryLanguage>
+    <emailOptOut>BOOLEAN or STRING</emailOptOut>
+    <mailOptOut>BOOLEAN or STRING</mailOptOut>
+    <postalAddresses>
+      <address1>STRING</address1>
+      <address2>STRING</address2>
+      <city>STRING</city>
+      <state>STRING</state>
+      <country>STRING</country>
+      <zipCode>STRING</zipCode>
+      <addressType>[HOME | BUSINESS | MAILING | SHIPPING | BILLING | OTHER]</addressType>
+      <isPrimary>BOOLEAN | STRING</isPrimary>
+      <inactiveDate>TIMESTAMP (e.g. '2022-02-06T15:01:33.409Z')</inactiveDate>
+    </postalAddresses>
+    <accountId>STRING</accountId>
+    <salutation>STRING</salutation>
+    <propertyOptional>STRING</propertyOptional>
+    <interfaceTypeOptional>STRING</interfaceTypeOptional>
+    <remoteSystemNameOptional>STRING</remoteSystemNameOptional>
+    <corvetteCompanyInfo>
+      <name>STRING</name>
+    </corvetteCompanyInfo>
+    <corvetteGuestNotes>
+      <title>STRING</title>
+      <text>STRING</text>
+      <type>STRING</type>
+      <time>TIMESTAMP (e.g. '2022-02-06T15:01:33.409Z')</time>
+    </corvetteGuestNotes>
+    <corvetteEmailAddresses>
+      <emailAddress>STRING</emailAddress>
+      <isPrimary>BOOLEAN or STRING</isPrimary>
+      <inactiveDate>TIMESTAMP (e.g. '2022-02-06T15:01:33.409Z')</inactiveDate>
+    </corvetteEmailAddresses>
+    <corvetteMemberships>
+      <loyaltyNumber>STRING</loyaltyNumber>
+      <programCode>STRING</programCode>
+      <levelCode>STRING</levelCode>
+      <expireDate>
+        <year>INT | STRING</year>
+        <month>INT | STRING</month>
+        <day>INT | STRING</day>
+      </expireDate>
+    </corvetteMemberships>
+    <corvettePhoneNumbers>
+      <phoneNumber>STRING</phoneNumber>
+      <type>STRING</type>
+      <isPrimary>BOOLEAN or STRING</isPrimary>
+      <inactiveDate>TIMESTAMP (e.g. '2022-02-06T15:01:33.409Z')</inactiveDate>
+    </corvettePhoneNumbers>
+    <corvettePmsDefinedFields>
+      <name>STRING</name>
+      <value>STRING</value>
+    </corvettePmsDefinedFields>
+    <corvettePropertyDefinedFields>
+      <name>STRING</name>
+      <value>STRING</value>
+    </corvettePropertyDefinedFields>
+    <corvetteCreditCards>
+      <last4>STRING</last4>
+      <expirationDate>
+        <year>INT | STRING</year>
+        <month>INT | STRING</month>
+        <day>INT | STRING</day>
+      </expirationDate>
+      <type>STRING</type>
+      <isPrimary>BOOLEAN or STRING</isPrimary>
+    </corvetteCreditCards>
+    <lastUpdatedAt>TIMESTAMP (e.g. '2022-02-06T15:01:33.409Z')</lastUpdatedAt>
+  </profiles>
+  <accountId>STRING</accountId>
+  <transactions>
+    <externalId>STRING</externalId>
+    <transactedAt>
+      <year>INT | STRING</year>
+      <month>INT | STRING</month>
+      <day>INT | STRING</day>
+    </transactedAt>
+    <beginAt>
+      <year>INT | STRING</year>
+      <month>INT | STRING</month>
+      <day>INT | STRING</day>
+    </beginAt>
+    <endAt>
+      <year>INT | STRING</year>
+      <month>INT | STRING</month>
+      <day>INT | STRING</day>
+    </endAt>
+    <vendorCategory>[VENDOR_CATEGORY_INVALID | VENDOR_CATEGORY_OTHER | VENDOR_CATEGORY_PROPERTY | VENDOR_CATEGORY_RESTAURANT | VENDOR_CATEGORY_SPA | VENDOR_CATEGORY_RECREATION_PROVIDER | VENDOR_CATEGORY_SHOP]</vendorCategory>
+    <vendorName>STRING</vendorName>
+    <transactionCategory>[TRANSACTION_CATEGORY_INVALID | TRANSACTION_CATEGORY_OTHER | TRANSACTION_CATEGORY_FNB | TRANSACTION_CATEGORY_SPA | TRANSACTION_CATEGORY_SPORTS | TRANSACTION_CATEGORY_ENTERTAINMENT | TRANSACTION_CATEGORY_AUTOMOBILE | TRANSACTION_CATEGORY_LAUNDRY | TRANSACTION_CATEGORY_PACKAGE]</transactionCategory>
+    <lineItems>
+      <amount>
+        <currencyCode>STRING</currencyCode>
+        <units>LONG | STRING</units>
+        <nanos>INT | STRING</nanos>
+      </amount>
+      <taxAmount>
+        <currencyCode>STRING</currencyCode>
+        <units>LONG | STRING</units>
+        <nanos>INT | STRING</nanos>
+      </taxAmount>
+      <amountIncludesTax>BOOLEAN or STRING</amountIncludesTax>
+      <amountIsDebit>BOOLEAN or STRING</amountIsDebit>
+      <quantity>INT or STRING</quantity>
+      <itemCode>STRING</itemCode>
+      <itemDescription>STRING</itemDescription>
+      <lineItemCategory>STRING</lineItemCategory>
+    </lineItems>
+  </transactions>
+  <propertyOptional>STRING</propertyOptional>
+  <interfaceTypeOptional>STRING</interfaceTypeOptional>
+  <remoteSystemNameOptional>STRING</remoteSystemNameOptional>
+  <corvetteGuestNotes>
+    <title>STRING</title>
+    <text>STRING</text>
+    <type>STRING</type>
+    <time>TIMESTAMP (e.g. '2022-02-06T15:01:33.409Z')</time>
+  </corvetteGuestNotes>
+  <corvetteTravelAgency>
+    <name>STRING</name>
+  </corvetteTravelAgency>
+  <confirmationCodeOptional>STRING</confirmationCodeOptional>
+  <corvettePmsDefinedFields>
+    <name>STRING</name>
+    <value>STRING</value>
+  </corvettePmsDefinedFields>
+  <corvettePropertyDefinedFields>
+    <name>STRING</name>
+    <value>STRING</value>
+  </corvettePropertyDefinedFields>
+  <services>
+    <timeSpan>
+      <startTime>TIMESTAMP (e.g. '2022-02-06T15:01:33.409Z')</startTime>
+      <timeUnitType>[DAY | HOUR | MINUTE]</timeUnitType>
+      <timeUnitsOptional>INT or STRING</timeUnitsOptional>
+    </timeSpan>
+    <pricePerUnit>
+      <amountBeforeTax>
+        <currencyCode>STRING</currencyCode>
+        <units>LONG | STRING</units>
+        <nanos>INT | STRING</nanos>
+      </amountBeforeTax>
+      <taxAmount>
+        <currencyCode>STRING</currencyCode>
+        <units>LONG | STRING</units>
+        <nanos>INT | STRING</nanos>
+      </taxAmount>
+    </pricePerUnit>
+    <inventoryCodeOptional>STRING</inventoryCodeOptional>
+    <rateCodeOptional>STRING</rateCodeOptional>
+    <numberOfUnitsOptional>INT or STRING</numberOfUnitsOptional>
+  </services>
+</root>

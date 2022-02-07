@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Request>
+    <Version>1.0</Version>
+    <HotelId>0005a</HotelId>
+    <PasswordHash>0102030405060708090a0b0c0d0e0f</PasswordHash>
+    <Action>CheckIn</Action>
+    <CheckInData>
+        <GuestInfo>
+            <GuestName>Decker, Eric</GuestName>
+            <LastName>Decker</LastName>
+            <FirstName>Eric</FirstName>
+            <Salutation>Mr.</Salutation>
+            <ZipCode>90210</ZipCode>
+            <Country>US</Country>
+            <EmailAddress>ericd@gmail.com</EmailAddress>
+            <Cell>201-333-2323</Cell>
+            <Language>en</Language>
+            <Vip>v</Vip>
+            <ReservationNumber>321321</ReservationNumber>
+            <ReservationNumberKey>321321-1</ReservationNumberKey>
+            <ArrivalDate>2014-09-20T15:30:00-5:00</ArrivalDate>
+            <DepartureDate>2014-09-27T11:00:00-5:00</DepartureDate>
+            <Adults>3</Adults>
+            <Children>1</Children>
+            <BuildingCode>bld</BuildingCode>
+            <RoomCode>0201</RoomCode>
+            <GuestSelection>1</GuestSelection>
+            <FolioNumber>56432</FolioNumber>
+            <CreditAvailable>300.00</CreditAvailable>
+            <PostRestrictions>0</PostRestrictions>
+            <TelephoneRestrictions>0</TelephoneRestrictions>
+            <GroupTypeCode>conf</GroupTypeCode>
+            <Source>nytimes</Source>
+            <MealPlan>mpa</MealPlan>
+            <RateType>unlimited</RateType>
+            <TotalRateAmount>3245.69</TotalRateAmount>
+            <TotalRateAmountTaxes>259.66</TotalRateAmountTaxes>
+            <RoomRateAmount>1022.00</RoomRateAmount>
+            <RoomRateAmountTaxes>81.90</RoomRateAmountTaxes>
+            <ResortFee>69.93</ResortFee>
+            <ResortFeeTaxes>5.59</ResortFeeTaxes>
+            <HousekeepingFee>0.00</HousekeepingFee>
+            <HousekeepingFeeTaxes>0.00</HousekeepingFeeTaxes>
+            <SpaFee>125.00</SpaFee>
+            <SpaFeeTaxes>10.00</SpaFeeTaxes>
+            <FirstRoomNightAmount>146.00</FirstRoomNightAmount>
+            <ReservationText>
+                <Text>Guest has indicated that they are arriving early and they</Text>
+                <Text>would like us to do what we can to have a room ready for</Text>
+                <Text>them if at all possible.</Text>
+            </ReservationText>
+            <SharerInfo>
+                <SharerReservationNumber>321123</SharerReservationNumber>
+            </SharerInfo>
+        </GuestInfo>
+    </CheckInData>
+</Request>
