@@ -9,7 +9,5 @@ const xml_to_json_runner = require("./src/xml_transformer").xml_to_json_runner;
 Note: - Two parameters are required, but one/1st parameter (source file name)  is mandetory. 
       - If one parameter is suplied, a generic name will be provided for the output file.
 */
-xml_to_json_runner("null_err_row", "null_rr_row");
 xml_to_json_runner("butcher_", "new_butcher_");
-
 json_to_xml_runner("butcher", "butcher");
